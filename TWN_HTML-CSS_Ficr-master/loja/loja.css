@@ -1,0 +1,191 @@
+body {
+  background-color: #e9edf9;
+}
+.banner-topo{
+  background-color: #54ab32;
+  
+  margin: 0px;
+}
+.banner-topo :hover{
+  cursor: pointer;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+.navbar {
+  position: absolute;
+  height: 2000px;
+  background-color: black;
+  padding: 24px;
+  color: #a5b5a5;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar:hover {
+  padding-right: 200px;
+}
+
+.navbar a {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar a span {
+  position: absolute;
+  width: 100px;
+  left: -100px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  text-align: left;
+}
+
+.navbar:hover a span {
+  opacity: 1;
+  left: 0px;
+  margin-left: 50px;
+}
+
+.navbar a i {
+  width: 20px;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.active {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-item{
+  color:#a5b5a5 ;
+}
+/*parte superior*/
+
+.img-inicial{
+  width: 100%;
+  height: 300px;
+  background: url(Brasil27.jpg) no-repeat center;
+  background-size: cover;
+  margin: 0;
+  
+}
+
+ .img-inicial h1 {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*font-weight: bold;*/
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 20px black;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+  
+}
+
+/*parte do titulo da loja*/
+.container-titulo{
+  display: flex;
+  width: 89.5%;
+  text-align: initial;
+  padding: 10px;
+  padding-left: 70px;
+  background-color: whitesmoke;
+ /*border: 1px solid black;*/
+}
+
+.titulo h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin: 20px 30px 10px 140px;
+  
+}
+/*parte do  itens da loja*/
+.container{
+  /*border: 1px solid red;*/
+  background-color: whitesmoke;
+  margin-top: 0px;
+  margin-left: 150px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: space-between;
+}
+#ul{
+  margin: 5px;
+  display: flex;
+  /*border: 1px solid blue;*/
+  background-color: whitesmoke;
+  justify-content: space-between;
+  list-style: none;
+  justify-content: space-between;
+  align-items: inherit;
+}
+.container-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: whitesmoke  ;
+  border: 1px solid darkgrey;
+  border-radius: 15px;
+  margin: 20px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+.container-item:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+button{
+  border: 1px solid #1f651f;
+  margin: 20px 40px;
+  padding: 10px 20px;
+  border-radius: 500px;
+  background-color: white;
+  color: #1f651f;
+  font-weight: 700;
+}
+button:hover{
+  cursor: pointer;
+  background-color: #1f651f;
+  color: white;
+}
+.img-item{
+  border-radius: 20px;
+  border: 1px solid #a5b5a5;
+}
+.texto-item{
+  text-align: initial;
+  font-size: medium;
+}
+.valor{
+  color: red;
+  margin: 20px 0px 10px 0px;
+
+}
