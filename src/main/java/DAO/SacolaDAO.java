@@ -4,7 +4,7 @@
  */
 package DAO;
 
-import DTO.sacola;
+import DTO.Sacola;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -20,9 +20,9 @@ public class SacolaDAO {
     Connection conSacola;
             PreparedStatement prep;
             ResultSet rs;
-            ArrayList<sacola> lista = new ArrayList<>();
+            ArrayList<Sacola> lista = new ArrayList<>();
 
-            public void inserirProdutos(sacola objSacola) {
+            public void inserirProdutos(Sacola objSacola) {
                 String comando = "insert Into sacola(nome, descricao, qtd, preco) values (?, ?, ?, ?)";
 
                 conSacola = new ConexaoDAO().conectaBD();
@@ -46,7 +46,7 @@ public class SacolaDAO {
             }
 
 
-            public ArrayList<sacola> listarProdutos(){
+            public ArrayList<Sacola> listarProdutos(){
                 String comando = "select * from sacola";
                 conSacola = new ConexaoDAO().conectaBD();
                 try {
@@ -54,7 +54,7 @@ public class SacolaDAO {
                     rs = prep.executeQuery();
 
                     while (rs.next()) {
-                        sacola objSacola = new sacola();
+                        Sacola objSacola = new Sacola();
                         objSacola.setNome(rs.getString("nome"));
                         objSacola.setDescricao(rs.getString("descricao"));
                         objSacola.setQtd(rs.getInt("qtd"));
@@ -71,7 +71,7 @@ public class SacolaDAO {
             }
 
 
-            public void alterarProduto(sacola objSacola){
+            public void alterarProduto(Sacola objSacola){
                 String comando = "update sacola set nome = ?, descricao = ?, qtd = ?, preco = ? where nome = ?";
 
                 conSacola = new ConexaoDAO().conectaBD();
@@ -94,7 +94,7 @@ public class SacolaDAO {
                 }
 
             }
-            public void excluirUsuario(sacola objSacola){
+            public void excluirUsuario(Sacola objSacola){
                 String comando = "delete from sacola where nome = ?";
 
                 conSacola = new ConexaoDAO().conectaBD();

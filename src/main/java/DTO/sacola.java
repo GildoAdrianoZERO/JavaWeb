@@ -8,7 +8,7 @@ package DTO;
  *
  * @author Lucas
  */
-public class sacola {
+public class Sacola {
        private String nome, descricao;
        private int qtd;
        private double preco;
