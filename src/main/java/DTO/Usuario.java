@@ -8,7 +8,7 @@ package DTO;
  *
  * @author Lucas
  */
-public class usuarios {
+public class Usuario {
      private String cpf, nome, telefone, email, endereco;
         
 
