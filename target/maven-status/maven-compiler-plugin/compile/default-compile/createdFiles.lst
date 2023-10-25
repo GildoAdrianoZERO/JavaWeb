@@ -1,2 +1,7 @@
+DTO\Usuario.class
 com\mycompany\progweb\JakartaRestConfiguration.class
+DAO\UsuarioDAO.class
 com\mycompany\progweb\resources\JakartaEE10Resource.class
+DAO\ConexaoDAO.class
+DTO\Sacola.class
+DAO\SacolaDAO.class

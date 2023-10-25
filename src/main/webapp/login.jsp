@@ -3,7 +3,7 @@
     Created on : Sep 26, 2023, 6:54:13 PM
     Author     : ficr
 --%>
-<%@page import="usuario.*"%>
+<%@page import="DTO.Usuario"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
