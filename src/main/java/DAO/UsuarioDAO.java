@@ -22,7 +22,7 @@ public class UsuarioDAO {
             ArrayList<Usuario> lista = new ArrayList<>();
 
             public void cadastrarUsuario(Usuario objUsuario) {
-                String comando = "insert Into usuario(cpf, nome, telefone, email, endereco) values (?, ?, ?, ?, ?)";
+                String comando = "insert Into usuario(cpf, nome, senha, email, endereco) values (?, ?, ?, ?, ?)";
 
                 conClientes = new ConexaoDAO().conectaBD();
 
@@ -30,7 +30,7 @@ public class UsuarioDAO {
                     prep = conClientes.prepareStatement(comando);
                     prep.setString (1,objUsuario.getCpf());
                     prep.setString(2,objUsuario.getNome());
-                    prep.setString(3,objUsuario.getTelefone());
+                    prep.setString(3,objUsuario.getSenha());
                     prep.setString(4,objUsuario.getEmail());
                     prep.setString(5,objUsuario.getEndereco());
 
@@ -56,7 +56,7 @@ public class UsuarioDAO {
                         Usuario objClientes = new Usuario();
                         objClientes.setCpf(rs.getString("cpf"));
                         objClientes.setNome(rs.getString("nome"));
-                        objClientes.setTelefone(rs.getString("telefone"));
+                        objClientes.setSenha(rs.getString("telefone"));
                         objClientes.setEmail(rs.getString("email"));
                         objClientes.setEndereco(rs.getString("endereco"));
 
@@ -79,7 +79,7 @@ public class UsuarioDAO {
                     prep = conClientes.prepareStatement(comando);
                     prep.setString (5,objUsuario.getCpf());
                     prep.setString(1,objUsuario.getNome());
-                    prep.setString(2,objUsuario.getTelefone());
+                    prep.setString(2,objUsuario.getSenha());
                     prep.setString(3,objUsuario.getEmail());
                     prep.setString(4,objUsuario.getEndereco());
  

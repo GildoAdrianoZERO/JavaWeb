@@ -100,12 +100,13 @@
           </button>
           
           <% 
-            
+              
             Usuario objUser = new Usuario();
+           
             String nome = request.getParameter("name");
-            String cpf = request.getParameter("cpf");       
+            String cpf = request.getParameter("cpf");
             String email = request.getParameter("email");
-            String senha = request.getParameter("password");
+            String password = request.getParameter("password");
            
             
             
@@ -113,10 +114,15 @@
       </form>
       <h1>
           <% 
-            out.println(nome); 
+            
+            objUser.setNome(nome);
+            objUser.setCpf(cpf);
+            objUser.setEmail(email);
+            objUser.setSenha(password);
+        
             out.println(cpf);
-            out.println(email);
-            out.println(senha);
+            //out.println(email);
+            //out.println(senha);
             
           %>
       </h1>
