@@ -1,0 +1,182 @@
+body {
+  background-color: #e9edf9;
+}
+.banner-topo{
+  background-color: #54ab32;
+  
+  margin: 0px;
+}
+.banner-topo :hover{
+  cursor: pointer;
+}
+
+img{
+  max-height: 100%;
+  max-width: 100%;
+}
+.navbar {
+  position: absolute;
+  height: 4000px;
+  background-color: #000000;
+  padding: 24px;
+  color: #a5b5a5;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+.navbar:hover {
+  padding-right: 200px;
+}
+
+.navbar a {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.navbar a span {
+  position: absolute;
+  width: 100px;
+  left: -100px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease-out;
+  text-align: left;
+}
+
+.navbar:hover a span {
+  opacity: 1;
+  left: 0px;
+  margin-left: 50px;
+}
+
+.navbar a i {
+  width: 20px;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.active {
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar-item{
+  color:#a5b5a5 ;
+}
+ h1{ 
+  text-align: center;
+  padding: 0%;
+  margin: 0%;
+ }
+
+ /*INICIANDO O CSS DA PAGINA INICIAL*/
+
+
+.img-inicial{
+  width: 100%;
+  height: 300px;
+  background: url(desmatamento.jpg) no-repeat center;
+  background-size: cover;
+  margin: 0;
+  
+}
+
+ .img-inicial h1 {
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /*font-weight: bold;*/
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 20px black;
+  text-align: center;
+  margin: 0;
+  padding-top: 100px;
+  
+}
+
+/*contexto da pagina*/
+
+
+.container-oquesao{
+  display: flex;
+  width: 70%;
+  margin:auto;
+  padding: 10px;
+  padding-left: 70px;
+  background-color: whitesmoke;
+  /*border: 1px solid black;*/
+}
+.oquesao h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  margin: 20px 30px 10px 10px;
+  
+}
+.oquesao p{
+  width: 70%;
+}
+
+/*noticias*/
+
+
+.news {
+  display: flex;
+  text-align: center;
+  /* padding-top: 10px; */  
+  /* margin: 0%; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 210px;
+  /* background-color: whitesmoke; */
+  
+}
+
+.news ul {
+  display: flex;
+  /* margin-left: 13%; */
+  flex-wrap: wrap;
+  width: 70%;
+  justify-content: space-between;
+}
+.title-news a{
+  text-decoration: none !important;
+  color: #000000;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.title-news a:hover{
+  cursor: pointer;
+  color: blue;
+}
+.news ul li {
+  list-style-type: none;
+  float: left;
+  width: 367px;
+  /* margin-left: 60px; */
+  margin-top: 20px;
+}
+.news ul li .thumb-news img{
+  width: 367px;
+  /*height: 228px;*/
+}
