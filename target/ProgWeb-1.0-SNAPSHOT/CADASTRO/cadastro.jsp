@@ -9,7 +9,15 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+         <title>The Weather News (Suporte)</title>
+         <script
+            src="https://kit.fontawesome.com/7f335cf7b9.js"
+            crossorigin="anonymous"
+         ></script> 
+    <script src="https://kit.fontawesome.com/48d0a7227b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="cadastro.css" />
     </head>
    <body id="body">
 
@@ -106,7 +114,7 @@
             String nome = request.getParameter("name");
             String cpf = request.getParameter("cpf");
             String email = request.getParameter("email");
-            String password = request.getParameter("password");
+            String senha = request.getParameter("password");
            
             
             
@@ -118,12 +126,8 @@
             objUser.setNome(nome);
             objUser.setCpf(cpf);
             objUser.setEmail(email);
-            objUser.setSenha(password);
-        
-            out.println(cpf);
-            //out.println(email);
-            //out.println(senha);
-            
+            objUser.setSenha(senha);
+                   
           %>
       </h1>
   </main>
